@@ -2,13 +2,15 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
+import RoomListPage from "./RoomListPage";
+import { ChakraBaseProvider } from "@chakra-ui/react";
 
-// const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+const Home = () => {
   return (
-    <>
-      <h1>😎チャット</h1>
-    </>
+    <ChakraBaseProvider>
+      <RoomListPage/>
+    </ChakraBaseProvider>
   );
-}
+};
+
+export default Home;
