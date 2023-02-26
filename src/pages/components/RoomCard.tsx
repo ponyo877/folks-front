@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { DragHandleIcon } from "@chakra-ui/icons";
-import Room from "../type/Room";
+import Room from "@/pages/type/Room";
 
 const RoomCard = (props: { room: Room }) => {
   return (

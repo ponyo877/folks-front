@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Flex, Wrap, WrapItem } from "@chakra-ui/react";
-import Room from "./type/Room";
-import RoomCard from "./components/RoomCard";
+import Room from "@/pages/type/Room";
+import RoomCard from "@/pages/components/RoomCard";
 
 const initRoomList: Room[] = [
   {
@@ -40,7 +40,7 @@ const RoomListPage: FC = () => {
   return (
     <Flex m="10" justify="center" alignItems="center">
       <Wrap justify="center">
-        {initRoomList.map((_room) => (
+        {initRoomList.map((_room: Room) => (
           <WrapItem key={_room.name}>
             <RoomCard room={_room} />
           </WrapItem>
